@@ -1,35 +1,3 @@
-/*!******************************************************************************
-*                                                                               *
-* Package: Clases para manejar las funcionalidades comparar y guardar           *
-* huellas                                                                       *
-*                                                                               *
-* Version: 1.0                                                                  *
-* Architecture: amd64.                                                          *
-* Maintainer: Asociación Cooperativa Simón Rodrí­guez para el Conocimiento       *
-*             Libre, R.S. <contacto@simonrodriguez.org.ve>                      *
-* Uploaders: Lcdo. César Cordero Rodríguez ccordero@simonrodriguez.org.ve.      * 
-* Documentación:                                                                *
-* Pruebas:                                                                      *
-* Licencia: GPLv3.                                                              *
-* Depends:                                                                      * 
-* Homepage: http://articulacion.simonrodriguez.org.ve/redtil                    *
-* Description: Documento con ideas para fijar la forma de documentar código.    *
-* Fecha: 20161212.                                                              *
-*                                                                               *
-*********************************************************************************/
-
-/**
- * @file TemplateAFIS_webservice.cpp
- * @brief Archivo de puente entre TemplateAFIS y Modelo_Huella
- * @author Asociación Cooperativa Simón Rodríguez para el Conocimiento Libre, R.S.
- * @date 2016
- * @version 1.0
- *
- * contacto@simonrodriguez.org.ve
- *
- * This file is part of Sistema de Identificación Biométrica para las OBPP.
- */
-
 #include "server.h"
 
 using namespace std;
@@ -43,6 +11,7 @@ using namespace std;
  */
  
 xmlrpc_value *
+
 sumAndDifference (xmlrpc_env *env, xmlrpc_value *param_array, void *user_data)
 {
     if(user_data != NULL)
@@ -135,6 +104,7 @@ sumAndDifference (xmlrpc_env *env, xmlrpc_value *param_array, void *user_data)
  */
  
 xmlrpc_value *
+
 msj (xmlrpc_env *env, xmlrpc_value *param_array, void *user_data)
 {
     if(user_data != NULL)
